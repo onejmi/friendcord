@@ -15,7 +15,6 @@
 import { onBeforeMount, useContext, useRouter } from '@nuxtjs/composition-api' 
 export default {
   layout: 'app',
-  middleware: 'auth',
   setup(setup, context) {
         const { $auth } = useContext()
 

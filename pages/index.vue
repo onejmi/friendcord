@@ -14,13 +14,11 @@
 <script>
 import { onBeforeMount, useContext, useRouter } from '@nuxtjs/composition-api' 
 export default {
+  middleware: 'auth',
+  auth: 'guest',
   setup(setup, context) {
         const { $auth } = useContext()
-        onBeforeMount(() => {
-            if($auth.loggedIn) {
-                useRouter().replace('/app')
-            }
-        })
+        
         function login() {
             $auth.loginWith('discord')
         }

@@ -18,12 +18,15 @@
 </template>
 
 <script>
-import { useContext } from '@nuxtjs/composition-api'
+import { useContext, useRouter } from '@nuxtjs/composition-api'
 export default {
+  middleware: 'auth',
   setup() {
       const { $auth } = useContext()
+      const router = useRouter()
       function logout() {
           $auth.logout()
+          router.replace('/')
       }
 
       return { logout }
