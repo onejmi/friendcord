@@ -14,8 +14,10 @@
     "@nuxtjs/composition-api": "^0.23.0",
     "@overnightjs/core": "^1.7.5",
     "@overnightjs/logger": "^1.2.0",
+    "@types/mongodb": "^3.6.12",
     "core-js": "^3.9.1",
     "express": "^4.17.1",
+    "mongodb": "^3.6.6",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
