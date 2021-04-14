@@ -22,9 +22,10 @@ import { useContext, useRouter } from '@nuxtjs/composition-api'
 export default {
   middleware: 'auth',
   setup() {
-      const { $auth } = useContext()
+      const { $auth, $cookies } = useContext()
       const router = useRouter()
       function logout() {
+          $cookies.set('authLogged', false, { path: '/app'})
           $auth.logout()
           router.replace('/')
       }

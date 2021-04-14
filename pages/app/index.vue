@@ -12,9 +12,10 @@
 </template>
 
 <script>
-import { onBeforeMount, useContext, useRouter } from '@nuxtjs/composition-api' 
+import { onBeforeMount, useContext, useAsync } from '@nuxtjs/composition-api' 
 export default {
   layout: 'app',
+  middleware: 'logged',
   setup(setup, context) {
         const { $auth } = useContext()
 

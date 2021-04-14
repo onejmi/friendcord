@@ -5,7 +5,7 @@ import { Logger } from '@overnightjs/logger';
 import { MongoClient } from 'mongodb'
 import secrets from '../secret'
 
-class ApiServer extends Server {
+export class ApiServer extends Server {
 
     private readonly SERVER_STARTED = 'API server started on port: ';
 
