@@ -13,6 +13,7 @@
 
 <script>
 import { onBeforeMount, useContext, useAsync } from '@nuxtjs/composition-api' 
+
 export default {
   layout: 'app',
   middleware: 'logged',
