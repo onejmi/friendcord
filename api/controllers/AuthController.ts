@@ -25,7 +25,8 @@ export class AuthController {
                 a_token: user.a_token,
                 r_token: user.r_token,
                 email: user.email,
-                prefReq: prefReq
+                prefMap: prefReq.prefMap,
+                guildIds: prefReq.guildIds
             }
          }, { upsert: true })
 
