@@ -20,7 +20,7 @@
     "core-js": "^3.9.1",
     "express": "^4.17.1",
     "mongodb": "^3.6.6",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.5"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.3",
