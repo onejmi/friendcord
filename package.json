@@ -14,7 +14,7 @@
     "@nuxtjs/composition-api": "^0.23.0",
     "@overnightjs/core": "^1.7.5",
     "@overnightjs/logger": "^1.2.0",
-    "@types/mongodb": "^3.6.12",
+    "@types/mongodb": "^3.6.15",
     "cheerio": "^1.0.0-rc.6",
     "cookie-universal-nuxt": "^2.1.4",
     "core-js": "^3.9.1",
